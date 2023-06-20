@@ -1,0 +1,62 @@
+/*实现stackoverflow网站的名片*/
+
+.user_card {
+    width: 200px;
+    height: 64.69px;
+    background-color: #D9EAF7;
+    margin: 100px auto;
+    padding: 5px 6px 7px;
+    box-sizing: border-box;
+}
+
+.user_card_head {
+    font-size: 12px;
+    color: #6A737C;
+    margin: 1px 0 4px 0;
+}
+
+.user_card_body_photo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+}
+
+.user_card_body_photo {
+    float: left;
+}
+
+.user_card_body_info {
+    margin-left: 8px;
+    float: left;
+}
+
+.user_card_body_info_username {
+    height: 16px;
+    line-height: 16px;
+
+}
+
+.user_card_body_info_username>a {
+    font-size: 13px;
+    color: #0074CC;
+    text-decoration: none;
+}
+
+.user_card_body_info_reputation {
+    font-size: 12px;
+    color: #838C95;
+    height: 16px;
+    line-height: 16px;
+    /*行高等于元素高度可以实现居中*/
+}
+
+.user_card_body_info_reputation_item {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    /* margin: 0 3px 0 2px; */
+    position: relative;
+    top: -2px;
+    /*向上偏移*/
+}
