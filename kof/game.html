@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>King of Fighters</title>
+    <link href="/static/js/game/game.js">
+    <link href="/static/css/kof/game.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div id="kof">
+    <canvas width="1280" height="720" tabindex="0"></canvas>
+</div>
+<script type="module">
+    import {KOF} from '/static/js/game/game.js';
+    let kof = new KOF('kof');
+</script>
+</body>
+</html>
