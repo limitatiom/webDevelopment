@@ -132,7 +132,7 @@ export class Player extends AcGameObject{
 
         let status = this.status;//根据状态来渲染
 
-        if(this.status === 1 && this.dir * this.vx < 0) this.status = 2;
+        if(this.status === 1 && this.dir * this.vx < 0) status = 2;
 
         let obj = this.animations.get(status);
         if (obj && obj.loaded) {
@@ -234,8 +234,12 @@ export class Player extends AcGameObject{
                     this.vx = this.speedx;
                 } else if (a) {
                     this.vx = -this.speedx;
+                } else {
+                    this.vx = 0;
                 }
                 this.vy = this.speedy;
+                this.status = 3;
+                this.frameCurCnt = 0;
             }
         } else if (d){
             this.vx = this.speedx;

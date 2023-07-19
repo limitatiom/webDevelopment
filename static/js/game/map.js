@@ -6,7 +6,7 @@ export class GameMap extends AcGameObject {
         super();
         this.root = root;//root是个game对象
         //为了让画布实现聚焦，需要使用tabindex
-        this.$canvas = $(`<canvas id="tutorial" width="1280" height="720" tabindex=0></canvas>`);//绘制地图
+        this.$canvas = $(`<canvas width="1280" height="720" tabindex=0></canvas>`);//绘制地图
         //取出画布
         this.ctx = this.$canvas[0].getContent('2d');
         this.root.$kof.append(this.$canvas);
@@ -36,8 +36,8 @@ export class GameMap extends AcGameObject {
             let [a, b] = this.root.players;
             if(a.status !== 6 && b.status !== 6){
                 a.status = b.status = 6;
-                a.vx = b.vx = 0;
                 a.frameCurCnt = b.frameCurCnt = 0;
+                a.vx = b.vx = 0;
             }
         }
         this.$timer.text(this.timerLeft / 1000);

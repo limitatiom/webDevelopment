@@ -6,6 +6,7 @@ export class Controller{
         this.$canvas = $canvas;
 
         this.pressedKeys = new Set();//被按住的
+        this.start();
     }
 
     start() {

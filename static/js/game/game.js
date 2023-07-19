@@ -12,7 +12,7 @@ class KOF {
             new Kyo(this, {
                 //todo
                 id: 0,
-                x: 0,
+                x: 200,
                 y: 0,
                 width: 150,
                 height: 200,
@@ -21,7 +21,7 @@ class KOF {
             new Kyo(this, {
                 //todo
                 id: 1,
-                x: 500,
+                x: 900,
                 y: 0,
                 width: 150,
                 height: 200,

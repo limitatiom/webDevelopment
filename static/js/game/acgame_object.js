@@ -30,8 +30,8 @@ let last_timestamp;//计算相邻两帧的时间间隔
 let AC_GAME_OBJECTS_FRAME = (timestamp) =>{//是requestAnimationFrame函数的接口，即timestamp函数
     for(let obj of AC_GAME_OBJECTS){//for-of枚举值
         if(!obj.hasCallStart){
-            obj.hasCallStart = true;
             obj.start();
+            obj.hasCallStart = true;
         } else {
             obj.timeDelta = timestamp - last_timestamp;
             obj.update();

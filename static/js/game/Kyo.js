@@ -12,7 +12,7 @@ export class Kyo extends Player{
         let outer = this;
         let offsets = [0, -22, -22, -140, 0, 0, 0];
         for(let i = 0;i < 7;i++){
-            let gif = new GIF;
+            let gif = new GIF();
             gif.load(`static/images/kof_heroes/kyo/${i}.gif`);
             this.animations.set(i, {
                 gif: gif,
